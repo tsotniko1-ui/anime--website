@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime World</title>
+    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/13/Anime-Logo-PNG-Cutout.png" type="image/x-icon">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1e1e2f;
+            color: #fff;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+        }
+        a {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #ffa07a;
+        }
+        /* Header Styles */
+        header {
+            background: linear-gradient(45deg, #282845, #1e1e2f);
+            padding: 1rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        header nav a {
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+        header nav .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        /* Hero Section */
+        .hero {
+            background: url('https://wallpapercave.com/wp/codT8Jj.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 8px #000;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+        .hero a {
+            padding: 10px 20px;
+            background: #ff6f61;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .hero a:hover {
+            background: #ffa07a;
+        }
+        /* Anime Cards Section */
+        .anime-cards {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #2e2e47;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .card h3 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+        .card p {
+            font-size: 0.9rem;
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+        .card .anime-info {
+            font-size: 0.9rem;
+            color: #ff6f61;
+        }
+        /* Footer */
+        footer {
+            background: linear-gradient(45deg, #282845, #1e1e2f);
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Anime World</div>
+            <div>
+                <a href="#home">Home</a>
+                <a href="#anime">Anime</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div>
+            <h1>Welcome to Anime World</h1>
+            <p>Your hub for all things anime! Discover, explore, and enjoy.</p>
+            <a href="#anime">Explore Anime</a>
+        </div>
+    </section>
+
+    <section class="anime-cards" id="anime">
+        <div class="card">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.xermhNLyuyYC4jlK3OR7VgHaEK&pid=Api&P=0&h=220" alt="Naruto">
+            <h3>Naruto</h3>
+            <p>Follow Naruto Uzumaki on his journey to become the greatest ninja.</p>
+            <div class="anime-info">Release Year: 2002 | Genre: Action, Adventure</div>
+        </div>
+        <div class="card">
+            <img src="https://static2.srcdn.com/wordpress/wp-content/uploads/2020/05/Attack-on-Titan-Season-4-Eren.jpg" alt="Attack on Titan">
+            <h3>Attack on Titan</h3>
+            <p>Join Eren and the Survey Corps in their fight against the Titans.</p>
+            <div class="anime-info">Release Year: 2013 | Genre: Action, Mystery</div>
+        </div>
+        <div class="card">
+            <img src="https://www.hdwallpapers.in/download/demon_slayer_tanjirou_kamado_on_fire_hd_anime-HD.jpg" alt="Demon Slayer">
+            <h3>Demon Slayer</h3>
+            <p>Tanjiro Kamado seeks revenge against demons who killed his family.</p>
+            <div class="anime-info">Release Year: 2019 | Genre: Action, Fantasy</div>
+        </div>
+        <div class="card">
+            <img src="https://wallpaperset.com/w/full/5/2/3/84215.jpg" alt="One Piece">
+            <h3>One Piece</h3>
+            <p>Monkey D. Luffy and his pirate crew search for the legendary One Piece treasure.</p>
+            <div class="anime-info">Release Year: 1999 | Genre: Adventure, Fantasy</div>
+        </div>
+        <div class="card">
+            <img src="http://1.bp.blogspot.com/-m4AFPKYXmsM/VT7EFp1iUKI/AAAAAAADv8Q/IgyZEMqsQdM/s1600/Death_Note.jpg" alt="Death Note">
+            <h3>Death Note</h3>
+            <p>Light Yagami finds a notebook that grants him the power to kill anyone whose name he writes.</p>
+            <div class="anime-info">Release Year: 2006 | Genre: Thriller, Mystery</div>
+        </div>
+        <div class="card">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.xu_rs4Q9rTUe8Zz3NnEpAAHaEo&pid=Api&P=0&h=220" alt="My Hero Academia">
+            <h3>My Hero Academia</h3>
+            <p>Izuku Midoriya trains to become the number one hero in a world full of superpowers.</p>
+            <div class="anime-info">Release Year: 2016 | Genre: Action, Superhero</div>
+        </div>
+        <div class="card">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.S7u5AlUFHvmszd3W4JJlzQHaEK&pid=Api&P=0&h=220" alt="Bleach">
+            <h3>Bleach</h3>
+            <p>Ichigo Kurosaki defends the human world as a Soul Reaper against supernatural forces.</p>
+            <div class="anime-info">Release Year: 2004 | Genre: Action, Supernatural</div>
+        </div>
+        <div class="card">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.WoJENIlccyuxrQTPbXjJhgHaGl&pid=Api&P=0&h=220" alt="Dragon Ball Z">
+            <h3>Dragon Ball Z</h3>
+            <p>Goku and his allies protect Earth from powerful villains and extraterrestrial threats.</p>
+            <div class="anime-info">Release Year: 1989 | Genre: Action, Sci-Fi</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Anime World. All rights reserved.</p>
+    </footer>
+</body>
+</html>
